@@ -8,6 +8,13 @@ hexo clean && hexo g && hexo s
 GitHub + Vercel 的自动化流程，不需要用 hexo d，用 Git 推送到github
 git add . && git commit -m "更新博客" && git push origin main
 
+更新备注常用:
+feat: 新功能（比如你以后加个评论系统、搜索功能）
+fix: 修复Bug（比如修复了导航栏点不开的bug）
+docs: 文档类（你写博客文章，用这个最合适）
+style: 样式调整（改了头像、主题颜色等，不影响代码逻辑）
+chore: 杂项（比如更新了配置文件、修改了 .gitignore）
+
 
 看当前状态：git status （红色代表修改了没 add，绿色代表 add 了没 commit）
 看提交记录：git log （按 q 退出）
