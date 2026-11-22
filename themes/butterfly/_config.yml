@@ -47,8 +47,8 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/Skiow404 || Github || '#24292e'
+  fas fa-envelope: mailto:Skiow404@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -57,7 +57,7 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/avatar.jpg
   effect: false
 
 # Disable all banner images
