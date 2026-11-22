@@ -1,0 +1,14 @@
+运行后，终端会提示你生成了文件：source/_posts/你的文章标题.md。
+然后在 VS Code 里打开这个 md 文件，开始写正文就行。
+hexo new "你的文章标题"
+
+清理缓存,把写的 Markdown 编译成 HTML 网页,启动本地预览服务器
+hexo clean && hexo g && hexo s
+
+GitHub + Vercel 的自动化流程，不需要用 hexo d，用 Git 推送到github
+git add . && git commit -m "更新博客" && git push origin main
+
+
+看当前状态：git status （红色代表修改了没 add，绿色代表 add 了没 commit）
+看提交记录：git log （按 q 退出）
+强制拉取最新代码：git pull origin main （如果你在多个电脑上写博客，或者直接在 GitHub 网页上改过代码，本地推送前先 pull 一下）
