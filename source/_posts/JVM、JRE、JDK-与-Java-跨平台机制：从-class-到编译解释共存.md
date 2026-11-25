@@ -46,14 +46,7 @@ JVM 可以理解为运行 Java 字节码的虚拟机。Java 程序并不是直�
 
 大致流程如下：
 
-```text
-Java 源码 .java
-  -> javac 编译
-  -> 含有字节码的 .class 文件
-  -> JVM
-     -> 解释器解释执行
-     -> JIT 编译器编译成机器码执行
-```
+![](/img/JVM.drawio.png)
 
 也就是说，`.java` 源码先被 `javac` 编译为含有字节码的 `.class` 文件，然后由 JVM 针对不同平台的机器，用解释器解释，或者用编译器（JIT）编译成机器码来运行。
 
@@ -64,6 +57,9 @@ Java 源码 .java
 从流程往前看，会涉及到 `.class` 文件。这里有一个容易忽略的点：并不是只有 Java 语言可以用 `javac` 把源码编译成 `.class`。
 
 其他不同编程语言，例如 Java、Groovy、Kotlin、JRuby、Clojure 等，也可以通过各自的编译器编译成 `.class` 文件，并最终通过 JVM 在不同平台（Windows、Mac、Linux）上运行。
+
+图解如下:
+![](/img/class.drawio.png)
 
 ## 四、JVM 规范与不同实现
 
@@ -84,6 +80,9 @@ JVM 并不是只有一种。只要满足 JVM 规范，每个公司、组织甚�
 - **解释型语言**：运行时逐行解释执行。
 
 Java 先编译成字节码，再由 JVM 解释执行或通过 JIT 编译成机器码执行，因此体现出编译与解释共存的特点。
+
+图解如下:
+![](/img/JieShiORBianYi.drawio.png)
 
 ## 小结
 
