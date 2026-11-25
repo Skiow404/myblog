@@ -92,6 +92,9 @@ order by create_time desc
 
 一种套餐分类底下有具体的套餐；一种菜品分类底下有具体的菜品。
 
+关系图解如下:
+![](/img/MoreToMoreAndOneToMore.drawio.png)
+
 新增具体套餐功能实现还涉及三个子功能：
 
 1. 上传图片。
