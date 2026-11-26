@@ -17,17 +17,6 @@ keywords:
 toc: true
 ---
 
-## 本文大纲
-
-- JVM、JRE、JDK 的包含关系
-- JDK9 模块系统与 jlink 的变化
-- JVM 是什么，解决什么问题
-- Java 源码到运行的流程与跨平台
-- `.class` 不只属于 Java
-- JVM 规范与不同实现
-- 编译与解释共存
-- 小结
-
 ## 一、JVM、JRE、JDK 的包含关系
 
 今天复习 JavaGuide 的 Java 基础内容，先看了 JVM、JRE、JDK 的讲解。简单来说，它们之间是包含关系，需要先知道它们分别是什么。
