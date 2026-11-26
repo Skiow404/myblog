@@ -62,7 +62,7 @@ class Solution {
         int bottom = matrix.length - 1;
         int left = 0;
         int right = matrix[0].length - 1;
-        while(top <= bottom || left <= right){
+        while(top <= bottom && left <= right){
             //输出当前边界并判断是否
             for (int i = left; i <= right; i++) list.add(matrix[top][i]);
             //并且在输出下一个边界之前动态移动当前边界
