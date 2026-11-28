@@ -22,7 +22,7 @@
 }
 
 body {
-  background: #F3F7FD;
+  background: var(--global-bg);
 }
 
 /* ---------- 2. 文章卡片：紧凑化 + 分类色条 + 悬停上浮 ---------- */
@@ -712,4 +712,219 @@ a.nav-chip:hover {
   .nav-posts-head {
     margin-top: 16px;
   }
+}
+
+/* =========================================================
+   16. 暗色模式适配（沿用主题 data-theme 切换，不引入 JS）
+   ========================================================= */
+[data-theme='dark'] {
+  --global-bg: #121212;
+  --font-color: rgba(255, 255, 255, .86);
+  --text-highlight-color: rgba(255, 255, 255, .92);
+  --card-bg: #1B1B1F;
+  --sidebar-bg: #1B1B1F;
+  --card-box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+  --card-hover-box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
+  --text-secondary: rgba(255, 255, 255, .62);
+  --text-muted: rgba(255, 255, 255, .42);
+  --card-border: #2A2E38;
+  --hover-primary: #7BA8EE;
+  --chip-bg: rgba(75, 139, 234, .16);
+}
+
+/* 文章卡片 */
+[data-theme='dark'] #recent-posts .recent-post-item {
+  border-color: #2A2E38;
+  background: #1B1B1F;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+[data-theme='dark'] #recent-posts .recent-post-item:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .5);
+}
+
+[data-theme='dark'] #recent-posts .article-meta-wrap .article-meta:not(.tags) .article-meta__categories:not(:first-of-type) {
+  color: rgba(255, 255, 255, .42);
+}
+
+[data-theme='dark'] #recent-posts .article-meta-wrap .article-meta:not(.tags) .article-meta__categories:nth-of-type(2)::before,
+[data-theme='dark'] #recent-posts .article-meta-wrap .post-meta-date,
+[data-theme='dark'] #recent-posts .article-meta-wrap .post-meta-date::before {
+  color: rgba(255, 255, 255, .42);
+}
+
+[data-theme='dark'] #recent-posts .recent-post-item .recent-post-info > .article-title {
+  color: rgba(255, 255, 255, .92);
+}
+
+[data-theme='dark'] #recent-posts .recent-post-item .recent-post-info > .article-title:hover {
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] #recent-posts .content {
+  color: rgba(255, 255, 255, .62);
+}
+
+[data-theme='dark'] #recent-posts .article-meta.tags .article-meta__tags {
+  color: rgba(255, 255, 255, .42);
+}
+
+[data-theme='dark'] #recent-posts .article-meta.tags .article-meta__tags:hover {
+  color: rgba(255, 255, 255, .62);
+}
+
+/* 首页导航区 */
+[data-theme='dark'] #recent-posts > #nav .nav-section-title,
+[data-theme='dark'] #recent-posts > #nav .nav-card-title {
+  color: rgba(255, 255, 255, .92);
+}
+
+[data-theme='dark'] #recent-posts > #nav .nav-card {
+  border-color: #2A2E38;
+  background: #1B1B1F;
+  color: rgba(255, 255, 255, .86);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+[data-theme='dark'] #recent-posts > #nav .nav-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .5);
+  color: rgba(255, 255, 255, .86);
+}
+
+[data-theme='dark'] #recent-posts > #nav .nav-card-desc {
+  color: rgba(255, 255, 255, .62);
+}
+
+[data-theme='dark'] #recent-posts > #nav .nav-chip {
+  background: rgba(255, 255, 255, .08) !important;
+  color: #9FBFF5 !important;
+}
+
+[data-theme='dark'] .nav-posts-head .nav-posts-title {
+  color: rgba(255, 255, 255, .92);
+}
+
+[data-theme='dark'] .nav-posts-head .nav-posts-more {
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] .nav-posts-head .nav-posts-more:hover {
+  color: #9FC0F7;
+}
+
+/* 分类页子分类胶囊栏 */
+[data-theme='dark'] .nav-cat-chips {
+  border-color: #2A2E38;
+  background: #1B1B1F;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+[data-theme='dark'] .nav-cat-chips .nav-chip {
+  background: rgba(75, 139, 234, .16);
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] .nav-cat-chips .nav-chip.active {
+  background: #2F6FD0;
+  color: #FFFFFF;
+}
+
+/* 侧栏 */
+[data-theme='dark'] #aside-content .card-widget {
+  border-color: #2A2E38;
+  background: #1B1B1F;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+[data-theme='dark'] #aside-content .card-widget .item-headline i {
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] .card-info .avatar-img {
+  box-shadow: 0 0 0 3px #2A2E38, 0 0 0 6px rgba(75, 139, 234, .35);
+}
+
+[data-theme='dark'] .card-category-list-link.current {
+  background: rgba(47, 111, 208, .28);
+  color: #7BA8EE !important;
+}
+
+[data-theme='dark'] .card-tags .card-tag-cloud a {
+  background: rgba(75, 139, 234, .16);
+  color: #7BA8EE !important;
+}
+
+[data-theme='dark'] .card-tags .card-tag-cloud a:hover {
+  background: #2F6FD0;
+  color: #FFFFFF !important;
+}
+
+/* 分页 */
+[data-theme='dark'] #pagination .page-number,
+[data-theme='dark'] #pagination .extend {
+  border-color: #2A2E38;
+  background: #1B1B1F;
+  color: rgba(255, 255, 255, .62);
+}
+
+[data-theme='dark'] #pagination .page-number:hover,
+[data-theme='dark'] #pagination .extend:hover {
+  border-color: #7BA8EE;
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] #pagination .page-number.current {
+  border-color: #2F6FD0;
+  background: #2F6FD0;
+  color: #FFFFFF;
+}
+
+[data-theme='dark'] #pagination .space {
+  color: rgba(255, 255, 255, .42);
+}
+
+/* 右下悬浮按钮 */
+[data-theme='dark'] #rightside > div > button:hover {
+  background: #4B8BEA;
+}
+
+/* 滚动后的磨砂导航 */
+[data-theme='dark'] #page-header.nav-fixed #nav,
+[data-theme='dark'] #page-header.nav-visible #nav,
+[data-theme='dark'] #page-header.not-top-img #nav {
+  background: rgba(18, 18, 18, .62);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .4);
+}
+
+[data-theme='dark'] #page-header.nav-fixed #nav a:hover,
+[data-theme='dark'] #page-header.nav-fixed #nav span.site-page:hover,
+[data-theme='dark'] #page-header.nav-fixed #nav #toggle-menu:hover {
+  color: #7BA8EE;
+}
+
+/* 文章页目录与分类总览页 */
+[data-theme='dark'] #aside-content .toc-link:hover {
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] .category-lists .category-list-link {
+  background: rgba(75, 139, 234, .16);
+  color: #7BA8EE;
+}
+
+[data-theme='dark'] .category-lists .category-list-link:hover {
+  color: #9FC0F7;
+}
+
+[data-theme='dark'] .category-lists .category-list-count {
+  color: rgba(255, 255, 255, .42);
+}
+
+[data-theme='dark'] .category-lists .category-list-child {
+  border-left-color: #2A2E38;
+}
+
+[data-theme='dark'] .category-lists .category-list-child .category-list-link {
+  background: rgba(255, 255, 255, .06);
+  color: rgba(255, 255, 255, .62);
 }
