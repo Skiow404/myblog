@@ -19,6 +19,7 @@ nav:
 
 menu:
   首页: / || fas fa-home
+  导航: /#nav || fas fa-compass
   归档: /archives/ || fas fa-archive
   # 将“分类”变成一个下拉菜单，名字后面不加路径
   分类 || fas fa-folder-open:

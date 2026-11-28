@@ -1,12 +1,13 @@
 ---
+use_abbrlink: true
 title: 外卖管理：套餐管理的三个接口与多表关联设计
 categories:
   - 项目实战
+  - 外卖管理系统
 tags:
   - 外卖管理
-  - Spring Boot
   - MyBatis
-  - 数据库设计
+  - Spring Boot
 keywords:
   - 套餐管理
   - 多表关联
@@ -14,6 +15,7 @@ keywords:
   - 起售停售
 description: 实现套餐按 id 查询、修改、起售/停售三类接口，重点体会套餐与菜品"多对多"关系在数据库表设计和业务代码中的体现。
 toc: true
+abbrlink: 50c4bc3
 date: 2026-11-25 20:16:31
 ---
 

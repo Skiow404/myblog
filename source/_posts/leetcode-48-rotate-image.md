@@ -1,17 +1,20 @@
 ---
+use_abbrlink: true
 title: LeetCode 48. 旋转图像：从数学映射到两次原地翻转
 categories:
   - 算法
+  - LeetCode 题解
 tags:
-  - LeetCode
   - 数组
   - 矩阵
+  - LeetCode
 keywords:
   - 旋转图像
   - 矩阵顺时针旋转
   - 原地算法
-description: 由 (i, j) -> (j, n-1-i) 的映射关系出发，把顺时针 90° 旋转拆解为主对角线翻转 + 水平翻转两步，实现原地矩阵旋转。
+description: '由 (i, j) -> (j, n-1-i) 的映射关系出发，把顺时针 90° 旋转拆解为主对角线翻转 + 水平翻转两步，实现原地矩阵旋转。'
 toc: true
+abbrlink: 6d817fa7
 date: 2026-11-25 19:48:28
 ---
 

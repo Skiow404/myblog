@@ -1,18 +1,23 @@
 ---
+use_abbrlink: true
 title: Redis 入门：基于内存的 key-value 数据库与 Java 操作
 categories:
   - 后端筑基
+  - 数据库与中间件
 tags:
   - Redis
   - Java
-keywords: 
+keywords:
   - Redis
   - key-value
   - RedisTemplate
   - 数据类型
   - 缓存
-description: Redis 基础入门笔记，涵盖 Redis 的定位与特点、五种数据类型及使用场景、常用指令，以及 Java 中通过 RedisTemplate 操作 Redis 的步骤。
+description: >-
+  Redis 基础入门笔记，涵盖 Redis 的定位与特点、五种数据类型及使用场景、常用指令，以及 Java 中通过 RedisTemplate 操作
+  Redis 的步骤。
 toc: true
+abbrlink: ff2cf4f8
 date: 2026-11-26 20:03:30
 ---
 

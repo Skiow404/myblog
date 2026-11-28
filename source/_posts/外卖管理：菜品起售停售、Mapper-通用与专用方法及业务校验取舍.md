@@ -1,13 +1,16 @@
 ---
+use_abbrlink: true
 title: 外卖管理：菜品起售停售、Mapper 通用与专用方法及业务校验取舍
 categories:
   - 项目实战
+  - 外卖管理系统
 tags:
   - 外卖管理
-  - Spring MVC
-  - Mapper设计
-  - 事务
-description: 整理外卖管理中的 Result 泛型、Spring MVC 参数绑定、菜品起售停售联动套餐、Mapper 通用与专用方法设计，以及业务校验该不该加的取舍思考。
+  - MyBatis
+  - Spring Boot
+description: >-
+  整理外卖管理中的 Result 泛型、Spring MVC 参数绑定、菜品起售停售联动套餐、Mapper
+  通用与专用方法设计，以及业务校验该不该加的取舍思考。
 keywords:
   - 外卖管理
   - Spring MVC
@@ -15,6 +18,7 @@ keywords:
   - AutoFill
   - 业务校验
 toc: true
+abbrlink: '68719e01'
 date: 2026-11-24 22:24:42
 ---
 

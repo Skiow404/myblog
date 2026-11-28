@@ -1,13 +1,14 @@
 ---
+use_abbrlink: true
 title: 后端开发中的五个细节：从 DTO 分层到 AOP 静默失败
 categories:
   - 后端筑基
+  - 框架与Web开发
 tags:
-  - Java
-  - MyBatis
-  - AOP
   - DTO
-  - 八股
+  - AOP
+  - MyBatis
+  - Java
 keywords:
   - DTO VO Entity
   - AutoFill
@@ -15,8 +16,11 @@ keywords:
   - 短路求值
   - 外键回填
   - 参数校验
-description: 记录套餐开发过程中踩到的五个细节：DTO/VO/Entity 的分工与"为什么要拆"、@AutoFill 的静默失败、Integer == 与 && 短路、关联表外键回填、以及"校验该不该加"的成本权衡。
+description: >-
+  记录套餐开发过程中踩到的五个细节：DTO/VO/Entity 的分工与"为什么要拆"、@AutoFill 的静默失败、Integer == 与 &&
+  短路、关联表外键回填、以及"校验该不该加"的成本权衡。
 toc: true
+abbrlink: fe8c2a7e
 date: 2026-11-25 19:38:08
 ---
 

@@ -1,12 +1,14 @@
 ---
-title: LeetCode 238.除自身以外数组的乘积:前缀积x后缀积
-date: 2026-11-22 18:03:20
+use_abbrlink: true
+title: 'LeetCode 238.除自身以外数组的乘积:前缀积x后缀积'
 categories:
   - 算法
-tags: 
+  - LeetCode 题解
+tags:
   - 数组
-  - 前缀积
   - LeetCode
+abbrlink: fa71571e
+date: 2026-11-22 18:03:20
 ---
 
 ## 题目

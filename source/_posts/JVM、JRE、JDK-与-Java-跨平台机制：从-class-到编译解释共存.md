@@ -1,13 +1,16 @@
 ---
+use_abbrlink: true
 title: JVM、JRE、JDK 与 Java 跨平台机制：从 .class 到编译解释共存
 categories:
   - 后端筑基
-tags:
   - Java基础
+tags:
   - JVM
+  - Java
   - 八股
-date: 2026-11-24 21:27:07
-description: 复习 JavaGuide 中 JVM 基础：JVM/JRE/JDK 的关系、JDK9 模块化与 jlink、.class 与跨平台、JVM 规范与实现，以及编译与解释共存。
+description: >-
+  复习 JavaGuide 中 JVM 基础：JVM/JRE/JDK 的关系、JDK9 模块化与 jlink、.class 与跨平台、JVM
+  规范与实现，以及编译与解释共存。
 keywords:
   - JVM
   - JRE
@@ -15,6 +18,8 @@ keywords:
   - 跨平台
   - JIT
 toc: true
+abbrlink: a1e3ffff
+date: 2026-11-24 21:27:07
 ---
 
 ## 一、JVM、JRE、JDK 的包含关系

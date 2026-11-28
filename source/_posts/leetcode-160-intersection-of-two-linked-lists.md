@@ -1,15 +1,16 @@
 ---
-title: LeetCode 160:相交链表——从零理解链表结构与双指针技巧
+use_abbrlink: true
+title: 'LeetCode 160:相交链表——从零理解链表结构与双指针技巧'
 categories:
   - 算法
+  - LeetCode 题解
 tags:
-  - LeetCode
   - 链表
-  - 哈希表
-  - 双指针
-keywords: LeetCode 160, 相交链表, 链表基础, 双指针, 浪漫双指针, Java
+  - LeetCode
+keywords: 'LeetCode 160, 相交链表, 链表基础, 双指针, 浪漫双指针, Java'
 description: 记录 LeetCode 160 相交链表的两种解法，并基于 ListNode 的定义深入剖析链表在内存中的真实结构与串联过程。
 toc: true
+abbrlink: be6ecfd8
 date: 2026-11-27 22:45:14
 ---
 

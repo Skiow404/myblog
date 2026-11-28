@@ -1,11 +1,12 @@
 ---
+use_abbrlink: true
 title: LeetCode 螺旋矩阵：四边界模拟与防御性编程
 categories:
   - 算法
+  - LeetCode 题解
 tags:
-  - LeetCode
   - 数组
-  - 模拟
+  - LeetCode
 description: 用四个边界变量模拟螺旋矩阵遍历，并记录空指针与数组越界相关的防御性编程注意点。
 keywords:
   - 螺旋矩阵
@@ -13,6 +14,7 @@ keywords:
   - 防御性编程
   - LeetCode
 toc: true
+abbrlink: ea5fd42e
 date: 2026-11-24 21:40:04
 ---
 

@@ -14,7 +14,13 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://skiow.com
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:abbrlink/
+abbrlink:
+  alg: crc32
+  rep: hex
+  drafts: false
+  force: false
+  writeback: true
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -61,7 +67,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
 
 # Category & Tag

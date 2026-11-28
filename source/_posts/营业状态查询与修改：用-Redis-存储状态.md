@@ -1,18 +1,22 @@
 ---
+use_abbrlink: true
 title: 营业状态查询与修改：用 Redis 存储状态
 categories:
   - 项目实战
+  - 外卖管理系统
 tags:
+  - 外卖管理
   - Redis
   - Spring Boot
-keywords: 
-  - 营业状态 
-  - Redis 
-  - Controller 
-  - 别名 
+keywords:
+  - 营业状态
+  - Redis
+  - Controller
+  - 别名
   - 接口重名
 description: 记录营业状态查询与修改功能的开发，状态采用 Redis 存储，以及商家端与客户端 Controller 重名时通过别名区分的处理。
 toc: true
+abbrlink: d1134714
 date: 2026-11-26 20:42:47
 ---
 

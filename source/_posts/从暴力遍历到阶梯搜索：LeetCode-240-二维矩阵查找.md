@@ -1,18 +1,20 @@
 ---
+use_abbrlink: true
 title: 从暴力遍历到阶梯搜索：LeetCode 240 二维矩阵查找
 categories:
   - 算法
+  - LeetCode 题解
 tags:
-  - LeetCode
-  - 二分查找
   - 矩阵
-keywords: 
+  - LeetCode
+keywords:
   - LeetCode 240
   - 搜索二维矩阵
   - 阶梯搜索
   - 矩阵查找
 description: 记录 LeetCode 240 的解题过程，从暴力遍历到利用矩阵整体升序特性的阶梯搜索，重点分析端点选择背后的逻辑推导。
 toc: true
+abbrlink: cda2b504
 date: 2026-11-26 19:46:35
 ---
 

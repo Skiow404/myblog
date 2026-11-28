@@ -1,16 +1,19 @@
 ---
+use_abbrlink: true
 title: 微信小程序登录流程与JWT鉴权实现
 categories:
   - 项目实战
+  - 外卖管理系统
 tags:
+  - 外卖管理
   - 微信登录
-  - HttpClient
   - JWT
-  - 小程序开发
   - Spring Boot
-keywords: 外卖管理, 微信小程序登录, HttpClient, 微信服务器, openid, JWT令牌, yml配置
-description: 记录外卖管理项目中用户端微信登录功能的开发历程。涵盖微信登录业务闭环、HttpClient发送HTTP请求、小程序端代码入门以及JWT令牌的集成与yml配置。
+keywords: '外卖管理, 微信小程序登录, HttpClient, 微信服务器, openid, JWT令牌, yml配置'
+description: >-
+  记录外卖管理项目中用户端微信登录功能的开发历程。涵盖微信登录业务闭环、HttpClient发送HTTP请求、小程序端代码入门以及JWT令牌的集成与yml配置。
 toc: true
+abbrlink: 9b61c233
 date: 2026-11-27 23:29:05
 ---
 

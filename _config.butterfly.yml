@@ -33,7 +33,39 @@ subtitle:
 # 开屏背景改用 CSS 渐变（见 source/css/custom.css），清空首页横幅图
 index_img:
 
-# 引入自定义样式（在主题样式之后加载，保证覆盖生效）
+# 首页卡片显示分类与标签（标签做成浅蓝小胶囊，见 custom.css）
+post_meta:
+  page:
+    tags: true
+
+# 分类页与首页使用同一套文章卡片样式
+category_ui: index
+
+# 侧栏：公告文案、分类树展开、标签卡精简
+aside:
+  card_recent_post:
+    enable: false
+  card_archives:
+    enable: false
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    runtime_date: 2026-11-21 16:33:21
+  card_announcement:
+    content: 记录后端学习的每一天
+  card_categories:
+    limit: 0
+    expand: true
+  card_tags:
+    limit: 12
+    color: false
+    orderby: length
+    order: -1
+
+# 引入自定义样式与首页导航脚本（在主题样式之后加载，保证覆盖生效）
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+    - <script src="/js/home-nav.js"></script>

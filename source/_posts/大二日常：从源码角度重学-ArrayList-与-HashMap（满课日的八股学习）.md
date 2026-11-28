@@ -1,14 +1,15 @@
 ---
+use_abbrlink: true
 title: 大二日常：从源码角度重学 ArrayList 与 HashMap（满课日的八股学习）
-date: 2026-11-23 20:00:00
 categories:
   - 后端筑基
+  - Java基础
 tags:
   - Java集合
-  - HashMap
-  - ArrayList
-  - 八股文
-  - JavaGuide
+  - Java
+  - 八股
+abbrlink: a12ecd74
+date: 2026-11-23 20:00:00
 ---
 
 ## 前言

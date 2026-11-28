@@ -1,13 +1,17 @@
 ---
+use_abbrlink: true
 title: 外卖管理：套餐分页查询与新增套餐实战（PageHelper、动态 SQL、多对多）
 categories:
   - 项目实战
+  - 外卖管理系统
 tags:
   - 外卖管理
   - MyBatis
   - PageHelper
   - Spring Boot
-description: 回顾外卖套餐分页查询与新增套餐业务，重点整理 PageHelper 的 ThreadLocal 分页机制、动态 SQL 条件查询，以及套餐与菜品多对多关系的新增流程。
+description: >-
+  回顾外卖套餐分页查询与新增套餐业务，重点整理 PageHelper 的 ThreadLocal 分页机制、动态 SQL
+  条件查询，以及套餐与菜品多对多关系的新增流程。
 keywords:
   - 外卖管理
   - PageHelper
@@ -15,6 +19,7 @@ keywords:
   - 多对多
   - SetmealVO
 toc: true
+abbrlink: 1c10a398
 date: 2026-11-24 21:50:29
 ---
 
