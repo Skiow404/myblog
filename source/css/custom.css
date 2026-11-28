@@ -1,0 +1,186 @@
+/* =========================================================
+   博客美化方案：深海蓝 + 留白 + 圆角卡片
+   配色：
+     开屏深色 #0E2A66 | 主色 #2F6FD0 | 浅蓝点缀 #4B8BEA
+     页面背景 #F3F7FD | 正文深色 #14264A
+   ========================================================= */
+
+/* ---------- 1. 全局配色与留白 ---------- */
+:root {
+  --global-bg: #F3F7FD;
+  --font-color: #14264A;
+  --text-highlight-color: #14264A;
+  --card-bg: #FFFFFF;
+  --sidebar-bg: #EAF2FC;
+  --card-box-shadow: 0 4px 16px rgba(47, 111, 208, .06);
+  --card-hover-box-shadow: 0 12px 28px rgba(47, 111, 208, .14);
+}
+
+body {
+  background: #F3F7FD;
+}
+
+/* ---------- 2. 文章卡片：14px 圆角、淡蓝阴影、悬停上浮 ---------- */
+#recent-posts .recent-post-item,
+.card-widget {
+  border-radius: 14px;
+}
+
+#recent-posts .recent-post-item {
+  box-shadow: 0 4px 16px rgba(47, 111, 208, .07);
+}
+
+#recent-posts .recent-post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(47, 111, 208, .16);
+}
+
+/* ---------- 3. 开屏：深蓝到亮蓝斜向渐变 + 圆环与符号装饰 ---------- */
+#page-header.full_page {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(255, 255, 255, .12) 0 56px, rgba(255, 255, 255, 0) 58px),
+    radial-gradient(circle at 84% 18%, rgba(255, 255, 255, .07) 0 94px, rgba(255, 255, 255, 0) 96px),
+    radial-gradient(circle at 10% 76%, rgba(255, 255, 255, .10) 0 72px, rgba(255, 255, 255, 0) 74px),
+    radial-gradient(circle at 94% 84%, rgba(255, 255, 255, .07) 0 30px, rgba(255, 255, 255, 0) 32px),
+    linear-gradient(135deg, #0E2A66 0%, #2F6FD0 58%, #4B8BEA 100%);
+}
+
+#site-title {
+  letter-spacing: .08em;
+}
+
+/* 淡淡的 </> 与 { } 装饰符号 */
+#site-info {
+  z-index: 1;
+}
+
+#site-info::before,
+#site-info::after {
+  position: absolute;
+  z-index: -1;
+  color: rgba(255, 255, 255, .10);
+  font-family: Consolas, Menlo, monospace;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+#site-info::before {
+  content: '</>';
+  top: -74px;
+  left: 12%;
+  font-size: 118px;
+  transform: rotate(-8deg);
+}
+
+#site-info::after {
+  content: '{ }';
+  right: 13%;
+  bottom: -96px;
+  font-size: 108px;
+  transform: rotate(6deg);
+}
+
+/* 技术栈小胶囊 */
+#site-subtitle::after {
+  content: 'Java · Spring Boot · Redis · MySQL';
+  display: block;
+  width: max-content;
+  margin: 18px auto 0;
+  padding: 5px 18px;
+  border: 1px solid rgba(255, 255, 255, .32);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .12);
+  color: rgba(255, 255, 255, .92);
+  font-size: .55em;
+  letter-spacing: .08em;
+  line-height: 1.8;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- 4. 导航栏：滚动后变半透明磨砂白 ---------- */
+#page-header.nav-fixed #nav,
+#page-header.nav-visible #nav,
+#page-header.not-top-img #nav {
+  background: rgba(255, 255, 255, .62);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  backdrop-filter: blur(18px) saturate(180%);
+  box-shadow: 0 2px 14px rgba(20, 38, 74, .10);
+}
+
+#page-header.nav-fixed #nav a:hover,
+#page-header.nav-fixed #nav span.site-page:hover,
+#page-header.nav-fixed #nav #toggle-menu:hover {
+  color: #2F6FD0;
+}
+
+/* ---------- 5. 侧边栏：头像浅蓝描边、按钮胶囊主色 ---------- */
+.card-info .avatar-img {
+  box-shadow: 0 0 0 3px #DCE9FB, 0 0 0 6px rgba(75, 139, 234, .28);
+}
+
+#card-info-btn {
+  border-radius: 999px;
+  background: #2F6FD0;
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(47, 111, 208, .25);
+}
+
+#card-info-btn:hover {
+  background: #4B8BEA;
+  color: #FFFFFF;
+}
+
+/* ---------- 6. 文章页：标题区沿用开屏渐变、目录高亮、二级标题竖线 ---------- */
+#page-header.post-bg {
+  background: linear-gradient(135deg, #0E2A66 0%, #2F6FD0 60%, #4B8BEA 100%);
+}
+
+#aside-content .toc-link:hover {
+  color: #2F6FD0;
+}
+
+#aside-content .toc-link.active {
+  background: #2F6FD0;
+  color: #FFFFFF;
+}
+
+#article-container h2 {
+  padding-left: 14px;
+  border-left: 4px solid #2F6FD0;
+}
+
+/* ---------- 7. 代码块：工具栏深蓝灰，与整体统一 ---------- */
+:root {
+  --hltools-bg: #22304E;
+  --hltools-color: #B7C7E8;
+}
+
+[data-theme='dark'] {
+  --hltools-bg: #22304E;
+  --hltools-color: #B7C7E8;
+}
+
+/* ---------- 8. 页脚：深蓝纯色，与开屏首尾呼应 ---------- */
+#footer {
+  background: #0E2A66;
+}
+
+#footer a:hover {
+  color: #7FB0F5;
+}
+
+/* ---------- 9. 小屏适配：装饰符号缩小 ---------- */
+@media screen and (max-width: 768px) {
+  #site-info::before {
+    top: -48px;
+    left: 5%;
+    font-size: 64px;
+  }
+
+  #site-info::after {
+    right: 7%;
+    bottom: -62px;
+    font-size: 58px;
+  }
+}

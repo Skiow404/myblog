@@ -1,0 +1,39 @@
+# ---------------------------------------------------------
+# 博客美化方案：深海蓝 + 留白 + 圆角卡片
+# 本文件覆盖 themes/butterfly/_config.yml 中的同名配置，
+# 自定义视觉样式见 source/css/custom.css
+# ---------------------------------------------------------
+
+# 主色统一为深海蓝方案（按钮、链接、高亮、目录、滚动条等）
+theme_color:
+  enable: true
+  main: '#2F6FD0'
+  paginator: '#4B8BEA'
+  text_selection: '#2F6FD0'
+  link_color: '#2F6FD0'
+  meta_color: '#7A8BA8'
+  hr_color: '#4B8BEA'
+  code_foreground: '#2F6FD0'
+  code_background: 'rgba(47, 111, 208, .08)'
+  toc_color: '#2F6FD0'
+  blockquote_padding_color: '#4B8BEA'
+  blockquote_background_color: '#4B8BEA'
+  scrollbar_color: '#4B8BEA'
+  button_hover: '#4B8BEA'
+
+# 首页开屏副标题：开启打字机效果并填写内容
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  sub: 
+    - Java 后端 · 算法 · 每日打卡
+    - 知是行之始，行是知之成
+
+# 开屏背景改用 CSS 渐变（见 source/css/custom.css），清空首页横幅图
+index_img:
+
+# 引入自定义样式（在主题样式之后加载，保证覆盖生效）
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">

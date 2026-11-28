@@ -1,7 +1,7 @@
 ---
 title: 后端开发中的五个细节：从 DTO 分层到 AOP 静默失败
 categories:
-  - 技术笔记
+  - 后端筑基
 tags:
   - Java
   - MyBatis

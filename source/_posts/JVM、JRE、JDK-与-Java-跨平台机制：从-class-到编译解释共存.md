@@ -1,7 +1,7 @@
 ---
 title: JVM、JRE、JDK 与 Java 跨平台机制：从 .class 到编译解释共存
 categories:
-  - 技术笔记
+  - 后端筑基
 tags:
   - Java基础
   - JVM

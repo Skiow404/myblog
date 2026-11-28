@@ -1,7 +1,7 @@
 ---
 title: Redis 入门：基于内存的 key-value 数据库与 Java 操作
 categories:
-  - 技术笔记
+  - 后端筑基
 tags:
   - Redis
   - Java
